@@ -20,15 +20,11 @@ $(document).ready(function () {
 
     $('button').on('mouseout', function () {
         $('button').css('background', ''); // Tipp: Itt és az előzőnél használható a $(this) is, de kivételesen most ez is jó.
-
     });
     // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     // Ez eddig jó! :)
 
-    $('button').on('onClick', function () {
-        $('body').append().on('click', function () {
-            while (window.writable ('<p></p>'));
-        })
-
-          });
+    $('button').on('click', function () {
+        $('body').append('<p>Ez egy sor</p>');
     });
+})
